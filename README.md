@@ -2,6 +2,7 @@
 
 ### Contact Information
 **Email:** pittmake@mail.uc.edu
+
 **Phone:** (859)-757-6388
 
 ### Co-op Work Experience
