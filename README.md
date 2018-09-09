@@ -18,13 +18,13 @@ I am searching for a project that invloves computer science education, web devel
 
 # Tessa Wiedmann
 
-## Contact Information
+### Contact Information
 
 * wiedmatn@mail.uc.edu
 * https://tessawiedmann.weebly.com
 * https://linkedin.com/in/tessawiedmann
 
-## Work Experience
+### Work Experience
 
 ##### Software Development Intern, Microsoft, Redmond, WA
 
@@ -73,13 +73,13 @@ Spring '16
 * Developing iOS and iWatch apps on research and development team
 * Planning Hour of Code for children of entire building’s employees
 
-## Skills
+### Skills
 
 * TypeScript, React, MobX, C++, MATLAB, HTML/CSS, Ruby/ Ruby on Rails
 * Curriculum design, Photography, Graphic design, Video editing
 * Proficient in German
 
-## Project Sought
+### Project Sought
 
 * Education based product
 * Computer science education game
