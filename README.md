@@ -1,4 +1,6 @@
-# Professional Biography for Katey Pittman
+# Professional Biographies
+
+# Katey Pittman
 
 ### Contact Information
 **Email:** pittmake@mail.uc.edu
@@ -13,3 +15,72 @@ Strategic Student Co-op _January 2016 - May 2018_
 
 ### Project Sought
 I am searching for a project that invloves computer science education, web development, and allows me to use/learn about new and cutting edge technologies. 
+
+# Tessa Wiedmann
+
+## Contact Information
+
+* wiedmatn@mail.uc.edu
+* https://tessawiedmann.weebly.com
+* https://linkedin.com/in/tessawiedmann
+
+## Work Experience
+
+##### Software Development Intern, Microsoft, Redmond, WA
+
+Summer '18
+
+* Implementing and designing education feature for Immersive Reader web app
+* Facilitating intern lunches with Microsoft executives 
+
+##### Education Intern, Code.org, Seattle, Washington
+
+Spring '18
+
+* Writing and editing CS Fundamentals course used by millions of students
+
+##### Learning Assistant, Calculus I & II, University of Cincinnati
+
+Fall '15 - Present
+
+* Aiding professor and students during class to reinforce Calculus topics 
+
+##### Explorer Intern, Microsoft, Redmond, Washington
+
+Summer '17
+
+* Creating web content for Microsoft’s Developer Center
+* Leading a company Hackathon team winning 3rd in “Women and Girls”
+* Hosted a Microsoft info session at UC for over 70 students
+
+##### Instructor, Junior Tech Academy, Cincinnati, Ohio
+
+Fall '16 - Spring '17
+
+* Teaching kids grades 1-8 about programming, robotics, etc.
+
+##### Software Development Co-op, TutorGen, Inc., Ft. Thomas, Kentucky
+
+Fall '16 - Spring '17
+
+* Creating a responsive Django dashboard to display client driven data
+* Spearheading plans for a high school entrepreneurial workshop
+
+##### Advanced Solutions Co-op, Siemens PLM Software, Milford, Ohio
+
+Spring '16
+
+* Developing iOS and iWatch apps on research and development team
+* Planning Hour of Code for children of entire building’s employees
+
+## Skills
+
+* TypeScript, React, MobX, C++, MATLAB, HTML/CSS, Ruby/ Ruby on Rails
+* Curriculum design, Photography, Graphic design, Video editing
+* Proficient in German
+
+## Project Sought
+
+* Education based product
+* Computer science education game
+* Hour of Code tutorial
