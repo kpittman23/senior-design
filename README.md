@@ -85,30 +85,42 @@ Spring '16
 * Computer science education game
 * Hour of Code tutorial
 
-# Elisabeth Bruesewitz
+# Morgan Best
 
 ### Contact Information
-**Email:** brueseen@mail.uc.edu
 
-**Phone:** (513)-203-1730
+* Email: bestmc@mail.uc.edu
+* Phone: (513)-516-4152
+* https://morgancbest.weebly.com/
+* https://www.linkedin.com/in/morgancbest/
 
-### Co-op Work Experience
-**The Brandery** Cincinnati, OH
-Front End Development Intern _May 2017 - August 2017_
-* Web development - Javascript (React, Node), HTML, CSS
+### Work Experience
 
-**Freelance Work** Cincinnati, OH
-Front End Development Intern _August 2017 -  present_
-* Web development - Javascript (React, Node), HTML, CSS
-* Built custom Shopify templates
-* Mobile development - React Native, SQL, Node, integrations with various third party payment platforms, publishing to iOS app store, AWS, and Google Play Store.
-* Web design
+##### Strategic Student Co-op, Siemens PLM Software, Milford, Ohio
 
-**Kroger Digital** Cincinnati, OH
-Front End Development Intern _January 2018 -  present_
-* Web development - Javascript (React, Node), HTML, CSS
-* Back end work in Java/Spring
-* Worked on payments team to manage & scale checkout flow for Clicklist
+_January 2016 - August 2017_
+
+* Cloud Computing with Teamcenter (2 semesters) - Amazon Web Services, Java, XML
+* Active Workspace Search (1 semester) - Apache Solr, Java, C++, Coverity
+
+##### Student Co-op, Siemens PLM Software, Charlotte, North Carolina
+
+_January 2018 - August 2018_
+
+*Cloud Computing with Mindsphere (2 semesters) - Amazon Web Services, Java, Apache Solr, Terraform, Javascript, HTML, Gremlin, ChaosMonkey
+
+##### Instructor, Junior Tech Academy, Cincinnati, Ohio
+
+Spring '17 - Summer '18
+
+* Teaching kids grades 1-8 about programming, robotics, etc.
+
+### Skills
+
+* Extensive experience with Amazon Web Services
+* Java, C++, MATLAB, HTML/CSS
+* Apache tools (Hadoop, Solr, Zookeeper)
 
 ### Project Sought
-I am searching for a project that involves a decent amount of web development and UI work. I'm interested in computer science education.
+
+* Project aimed towrads computer science education
