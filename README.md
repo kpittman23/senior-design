@@ -84,3 +84,31 @@ Spring '16
 * Education based product
 * Computer science education game
 * Hour of Code tutorial
+
+# Elisabeth Bruesewitz
+
+### Contact Information
+**Email:** brueseen@mail.uc.edu
+
+**Phone:** (513)-203-1730
+
+### Co-op Work Experience
+**The Brandery** Cincinnati, OH
+Front End Development Intern _May 2017 - August 2017_
+* Web development - Javascript (React, Node), HTML, CSS
+
+**Freelance Work** Cincinnati, OH
+Front End Development Intern _August 2017 -  present_
+* Web development - Javascript (React, Node), HTML, CSS
+* Built custom Shopify templates
+* Mobile development - React Native, SQL, Node, integrations with various third party payment platforms, publishing to iOS app store, AWS, and Google Play Store.
+* Web design
+
+**Kroger Digital** Cincinnati, OH
+Front End Development Intern _January 2018 -  present_
+* Web development - Javascript (React, Node), HTML, CSS
+* Back end work in Java/Spring
+* Worked on payments team to manage & scale checkout flow for Clicklist
+
+### Project Sought
+I am searching for a project that involves a decent amount of web development and UI work. I'm interested in computer science education.
