@@ -29,9 +29,4 @@ Background skills applicable to the problem
 
 Team approach, goals, and expectations
 
-* We intend to follow the [Hour of Code activity guidelines](https://hourofcode.com/us/activity-guidelines) outlined by Code.org in order to get it submitted as an actual lesson plan used during Computer Science Education Week in 2019. 
-
-https://hourofcode.com/us/activity-guidelines
-
-https://hourofcode.com/us/activity-guidelines
-
+* We intend to follow the [Hour of Code activity guidelines](https://hourofcode.com/us/activity-guidelines) outlined by Code.org in order to get it submitted as an actual lesson plan used during Computer Science Education Week in 2019.
