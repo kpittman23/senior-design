@@ -19,13 +19,13 @@ Our project will engage students in computer science through music. It will allo
 
 ### Design Diagrams
 [Design Diagram 0](https://github.com/kpittman23/senior-design/blob/master/Assignment%204/D0.pdf):
-Description of diagram 1
+Design Diagram one is our most basic diagram. It shows the relationship between the student, the webapp, and the speakers. The student interacts with the webapp to create their music, and in turn, the webapp will create a sound that will play from the speakers. 
 
 [Design Diagram 1](https://github.com/kpittman23/senior-design/blob/master/Assignment%204/D1.pdf):
-Description of diagram 2
+Design diagram 2 is an expansion of design diagram 1. It shows the same interaction between the student, the webapp, and the speaker, but it also adds some interactions between the webapp and third party libraries. The webapp will interact with blockly to build the drag and drop code blocks. It will also interact with react.js as the building blocks for the app. The webapp will also interact with a server, but we have not yet determined what type of server we will use. 
 
 [Design Diagram 2](https://github.com/kpittman23/senior-design/blob/master/Assignment%204/D2.pdf):
-Description of diagram 3
+Design diagram 3 is an expansion of design diagram 2. It shows the same interaction between the student, the webapp, and the speaker, as well as the third party libraries we plan to use. Design diagram 3 also shows static content, including the images and sound clips we are going to collect for out webapp. 
 
 ### Project Tasks and Timeline, Effort Matrix
 Elisabeth to write paragraph/include screenshots of how we're doing Agile and using Trello. Can also include [Task List](https://github.com/kpittman23/senior-design/blob/master/Assignment%20%235%20Task%20List.md)
