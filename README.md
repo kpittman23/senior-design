@@ -28,7 +28,36 @@ Design diagram 2 is an expansion of design diagram 1. It shows the same interact
 Design diagram 3 is an expansion of design diagram 2. It shows the same interaction between the student, the webapp, and the speaker, as well as the third party libraries we plan to use. Design diagram 3 also shows static content, including the images and sound clips we are going to collect for out webapp. 
 
 ### Project Tasks and Timeline, Effort Matrix
-Elisabeth to write paragraph/include screenshots of how we're doing Agile and using Trello. Can also include [Task List](https://github.com/kpittman23/senior-design/blob/master/Assignment%20%235%20Task%20List.md)
+This section looks a little bit different for us than most teams as we decided we're going to plan our project using Agile methodologies. We will be planning our work on a per-sprint basis as we have so many unknowns and we all feel like we can pick up whatever work needs to be completed. This will allow us to be flexible and adapt to any new issues that may arise as we start work on the project.
+
+We will be using Trello to keep track of each of our stories, or tasks. We've created a shared team space within Trello and created a board for each of the different epics we think we'll need (deciding on and standing up the framework, back end work, front end work, and hosting/deploying the application). We also have included a backlog board with some stretch goals that we will work on if we complete everything else in time. We will break up each epic into individual stories with points assigned to them as we are ready to work the epic, and we will each pull in stories as we have time. We will update an effort matrix with these as we complete the work, but we plan on splitting all of the work pretty equally.
+
+We did break out the first framework epic into the individual tasks listed below:
+
+* Create React Web App - 1 point
+* Create Wireframe for Home (Introduction) page - 3 points
+* Finalize a curriculum for the project - 5 points
+* Create Wireframe for Activity Pages - 5 points
+* Create Wireframe for Conclusion page - 3 points
+* Review, edit and finalize wireframe drafts - 3 points
+* Research and decide on Audio API - 5 points
+   - Where are we grabbing the sounds from?
+   - How are we combining the sounds?
+   - How are we saving & exporting the data?
+* Research Servers/Hosting - 8 points
+   - Where are we hosting?
+   - How much will it cost?
+   - What tier is sufficient?
+   - How to integrate with node?
+   - How to send email?
+   - How to save a music file?
+* Create Audio Service - 3 points
+   - Just standing up the basic service and hitting the Audio API/getting a response
+* Research Blockly Integration - 3 points
+   - How do we customize the blocks?
+   - How do we convert this to "real" code that we can use?
+
+Our trello boards are private to our team, but I've included the link [here](https://docs.google.com/document/d/1rsQWjBcVgQcL_Pdpi6iWaus7aCcYcQ7YxgF-0GnhhTY/edit) for the team and Dr. Annexstein to view.
 
 ### [ABET Concerns Essay](https://github.com/kpittman23/senior-design/blob/master/Assignment7.md)
 
@@ -43,3 +72,15 @@ None
 
 ### Appendix
 References, citations, links to code repos we will be using, meeting notes, evidence of 45 hours of effort per team member (we met 3-6 every week of the semester during senior design time or made up for it with individual research on our own outside class every week)
+
+[Hour of Code Guidelines](https://hourofcode.com/us/activity-guidelines)
+
+[React Website](https://reactjs.org/) & [create react app repo](https://github.com/facebook/create-react-app)
+
+[Redux website](https://redux.js.org/)
+
+[ExpressJS (node framework for writing APIs) Website](https://expressjs.com/)
+
+[Scratch Blocks Repo](https://github.com/LLK/scratch-blocks)
+
+[Blockly website](https://developers.google.com/blockly/)
