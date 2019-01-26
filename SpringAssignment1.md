@@ -6,6 +6,7 @@ We plan to use some snapshot method to test the components in the browser and va
 We will also write a few high level integration tests to test the interaction of our webapp and the react-sound API we chose to use. _Add more info here pls_
 
 __Part II__: Test Case Descriptions
+    
     Test 1:
     1. TestButtonComponent
     2. Tests the button component
