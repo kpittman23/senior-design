@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jss": "^9.8.7",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-jss": "^8.6.1",
+    "react-redux": "^5.0.7",
     "react-router": "^3.0.5",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "redux": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
