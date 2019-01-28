@@ -41,3 +41,9 @@ __Part II__: Test Case Descriptions
     9. Unit
 
 __Part III__: Test Case Matrix
+
+| Test Name  | Normal/Abnormal  | Unit/Integration  |
+|------------|------------------|-------------------|
+| TestButtonComponent  | ???  | Unit  |
+| TestProgressBarComponent  | ???  | Unit  |
+|  ReactSoundTest | ???  | Unit  |
