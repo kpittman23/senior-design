@@ -1,29 +1,48 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classnames from 'classnames';
 import injectSheet from 'react-jss';
 import StepIndicator from './StepIndicator';
 import { colors } from '../constants';
 
-const ProgressBarWithClasses = ({
-  classes,
-  className,
-  currentSelectedStepNumber = 1,
-  numSteps = 1,
-}) => (
+class ProgressBarWithClasses extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      currentSelectedStepNumber: props.initialSelectedStepNumber,
+    }
+  }
 
-  <div className={classnames(classes.progressBar, className)}>
-    {[...Array(numSteps).keys()].map((val, arrayIndex) => {
-      const stepNumber = arrayIndex + 1;
-      return (
-        <StepIndicator 
-          key={stepNumber}
-          isSelected={currentSelectedStepNumber === stepNumber}
-          stepNumber={stepNumber}
-        />
-      );
-    })}
-  </div>
-);
+  setSelectedStep = (stepNumber) => {
+    this.setState({
+      currentSelectedStepNumber: stepNumber,
+    })
+  }
+
+  render(){
+    const {
+      classes,
+      className,
+      numSteps = 1,
+    } = this.props;
+    
+    return (
+    
+      <div className={classnames(classes.progressBar, className)}>
+        {[...Array(numSteps).keys()].map((val, arrayIndex) => {
+          const stepNumber = arrayIndex + 1;
+          return (
+            <StepIndicator 
+              key={stepNumber}
+              isSelected={this.state.currentSelectedStepNumber === stepNumber}
+              stepNumber={stepNumber}
+              onClick={()=>{this.setSelectedStep(stepNumber)}}
+            />
+          );
+        })}
+      </div>
+    );
+  }
+}
 
 const styles = {
   progressBar: {
@@ -38,6 +57,10 @@ const styles = {
       marginLeft: 20,
     }
   }
+}
+
+ProgressBarWithClasses.defaultProps = {
+  initialSelectedStepNumber: 1,
 }
 
 export default injectSheet(styles)(ProgressBarWithClasses);
