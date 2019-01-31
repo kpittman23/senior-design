@@ -9,7 +9,7 @@ const StepIndicatorWithClasses = ({
   stepNumber,
   onClick,
 }) => (
-  <div className={classnames(classes.container, {[classes.isSelected]: isSelected})}>
+  <div className={classnames(classes.container, {[classes.isSelected]: isSelected})} onClick={onClick}>
     {stepNumber}
   </div>
 );
@@ -24,9 +24,12 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    cursor: 'pointer',
   },
   isSelected: {
+    width: 35,
+    height: 35,
     backgroundColor: colors.darkGray,
     color: colors.white,
   }
