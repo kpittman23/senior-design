@@ -2,10 +2,11 @@
 import React, { Component } from 'react';
 import { Router, browserHistory, Route, Link } from 'react-router';
 import logo from './logo.svg';
-import './App.css';
 import Sound from 'react-sound';
 import Button from './SoundButton';
 import sadTrombone from './sadTrombone.mp3'
+
+import ActivityPage from './pages/ActivityPage';
 
 class Page extends Component{
   constructor(){
@@ -57,24 +58,22 @@ class Page extends Component{
 }
 
 const Home = (props) => (
-  <Page title="Home"/>
+  <Page title="Home" {...props}/>
 );
 
-const About = (props) => (
-  <Page title="About"/>
-);
+// Leaving this in here so we can remember how to route between multiple pages
 
-const Settings = (props) => (
-  <Page title="Settings"/>
-);
+// const About = (props) => (
+//   <Page title="About"/>
+// );
+
 
 class App extends Component {
   render() {
     return (
       <Router history={browserHistory}>
-        <Route path="/" component={Home}/>
-        <Route path="/about" component={About}/>
-        <Route path="/settings" component={Settings}/>
+        <Route path="/button" component={Home}/>
+        <Route path="/" component={ActivityPage}/>
       </Router>
     );
   }
