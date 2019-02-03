@@ -4,7 +4,8 @@ import { Router, browserHistory, Route, Link } from 'react-router';
 import logo from './logo.svg';
 import Sound from 'react-sound';
 import Button from './SoundButton';
-import sadTrombone from './sadTrombone.mp3'
+import sadTrombone from './sadTrombone.mp3';
+import Blockly from './blockly'
 
 import ActivityPage from './pages/ActivityPage';
 
@@ -78,5 +79,13 @@ class App extends Component {
     );
   }
 }
+
+Blockly.inject('blockly-div', {
+  media: '../../../media/',
+  toolbox: document.getElementById('toolbox'),
+  toolboxPosition: 'end',
+  horizontalLayout: true,
+  scrollbars: false
+});
 
 export default App;
