@@ -13,7 +13,7 @@ __Part II__: Test Case Descriptions
     3. Tests that the button component renders correctly and performs correct onClick actions.
     4. Button component, props, styling.
     5. Rendered button component with proper styling, onClick event
-    6. _normal/abnormal/boundary case indication_ 
+    6. Normal 
     7. Blackbox
     8. Functional
     9. Unit
@@ -35,7 +35,18 @@ __Part II__: Test Case Descriptions
     3. Tests that the API returns the proper sounds.
     4. Route, parameters.
     5. 204 OK status, sounds are played.
-    6. _normal/abnormal/boundary case indication_ 
+    6. Normal 
+    7. Blackbox
+    8. Functional
+    9. Unit
+
+    Test 3:
+    1. BlocklyIntegrationTest
+    2. Tests blockly-react integration
+    3. Confirms that blockly is injected into the react application.
+    4. ?
+    5. Rendered blockly
+    6. Normal
     7. Blackbox
     8. Functional
     9. Unit
@@ -44,6 +55,7 @@ __Part III__: Test Case Matrix
 
 | Test Name  | Normal/Abnormal  | Unit/Integration  |
 |------------|------------------|-------------------|
-| TestButtonComponent  | ???  | Unit  |
-| TestProgressBarComponent  | ???  | Unit  |
-|  ReactSoundTest | ???  | Unit  |
+| TestButtonComponent  | Normal  | Unit  |
+| TestProgressBarComponent  | Normal  | Unit  |
+|  ReactSoundTest | Normal  | Unit  |
+|  BlocklyIntegrationTest | Normal  | Unit  |
