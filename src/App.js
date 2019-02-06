@@ -5,6 +5,7 @@ import logo from './logo.svg';
 import Sound from 'react-sound';
 import Button from './SoundButton';
 import sadTrombone from './sadTrombone.mp3'
+import fart from './fart.mp3'
 
 import ActivityPage from './pages/ActivityPage';
 
@@ -13,12 +14,19 @@ class Page extends Component{
     super();
     this.state = {
       shouldRenderSound : false,
+      shouldRenderFartSound: false,
     }
   }
 
   playSound = () => {
     this.setState({
       shouldRenderSound: true,
+    })
+  }
+
+  playFartSound = () => {
+    this.setState({
+      shouldRenderFartSound: true,
     })
   }
 
@@ -51,7 +59,15 @@ class Page extends Component{
           playStatus={Sound.status.PLAYING}
           playFromPosition={0 /* in milliseconds */}
           autoLoad={true}
+          onFinishedPlaying={() => this.state.shouldRenderFartSound}
         />}
+        {this.state.shouldRenderFartSound && <Sound
+          url={fart}
+          playStatus={Sound.status.PLAYING}
+          playFromPosition={0 /* in milliseconds */}
+          autoLoad={true}
+        />}
+
     </div>
     );
   }
