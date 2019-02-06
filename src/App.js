@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 import { Router, browserHistory, Route, Link } from 'react-router';
 import logo from './logo.svg';
 import Sound from 'react-sound';
-import Button from './SoundButton';
-import sadTrombone from './sadTrombone.mp3'
+import Button from './components/SoundButton';
+import sadTrombone from './assests/sounds/sadTrombone.mp3'
 
 import ActivityPage from './pages/ActivityPage';
+import LottieControl from './components/LottieControl';
 
 class Page extends Component{
   constructor(){
@@ -52,6 +53,7 @@ class Page extends Component{
           playFromPosition={0 /* in milliseconds */}
           autoLoad={true}
         />}
+    <LottieControl />
     </div>
     );
   }
