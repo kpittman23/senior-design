@@ -14,20 +14,29 @@ class Page extends Component{
     super();
     this.state = {
       shouldRenderSound : false,
-      shouldRenderFartSound: false,
+      songArray: [
+        sadTrombone,
+        fart,
+      ],
+      currentSong: [],
+      index: 0,
     }
   }
 
   playSound = () => {
     this.setState({
       shouldRenderSound: true,
+      currentSong: this.state.songArray[this.state.index],
     })
   }
 
-  playFartSound = () => {
-    this.setState({
-      shouldRenderFartSound: true,
-    })
+  handleSongFinishedPlaying = () => {
+    if (this.state.index < this.state.songArray.length) {
+      this.setState({
+        currentSong: this.state.songArray[this.state.index + 1],
+        index: this.state.index + 1,
+      })
+    }
   }
 
   render(){
@@ -55,19 +64,12 @@ class Page extends Component{
       this.playSound();
     }}/>
     {this.state.shouldRenderSound && <Sound
-          url={sadTrombone}
+          url={this.state.currentSong}
           playStatus={Sound.status.PLAYING}
           playFromPosition={0 /* in milliseconds */}
           autoLoad={true}
-          onFinishedPlaying={() => this.state.shouldRenderFartSound}
+          onFinishedPlaying={this.handleSongFinishedPlaying}
         />}
-        {this.state.shouldRenderFartSound && <Sound
-          url={fart}
-          playStatus={Sound.status.PLAYING}
-          playFromPosition={0 /* in milliseconds */}
-          autoLoad={true}
-        />}
-
     </div>
     );
   }
