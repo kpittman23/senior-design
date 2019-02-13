@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import ProgressBar from '../components/ProgressBar';
+import BlobWorkspace from '../components/BlobWorkspace'
 
 const ActivityPageWithClasses = ({
   classes,
@@ -9,6 +10,7 @@ const ActivityPageWithClasses = ({
 }) => (
   <div className={classes.page}>
     <ProgressBar currentSelectedStepNumber={currentLevel} numSteps={numLevels}/>
+    <BlobWorkspace/>
   </div>
 );
 

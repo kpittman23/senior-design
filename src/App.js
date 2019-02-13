@@ -5,6 +5,7 @@ import logo from './logo.svg';
 import Sound from 'react-sound';
 import Button from './SoundButton';
 import sadTrombone from './sadTrombone.mp3'
+import fart from './fart.mp3'
 
 import ActivityPage from './pages/ActivityPage';
 
@@ -13,13 +14,29 @@ class Page extends Component{
     super();
     this.state = {
       shouldRenderSound : false,
+      songArray: [
+        sadTrombone,
+        fart,
+      ],
+      currentSong: [],
+      index: 0,
     }
   }
 
   playSound = () => {
     this.setState({
       shouldRenderSound: true,
+      currentSong: this.state.songArray[this.state.index],
     })
+  }
+
+  handleSongFinishedPlaying = () => {
+    if (this.state.index < this.state.songArray.length) {
+      this.setState({
+        currentSong: this.state.songArray[this.state.index + 1],
+        index: this.state.index + 1,
+      })
+    }
   }
 
   render(){
@@ -47,10 +64,11 @@ class Page extends Component{
       this.playSound();
     }}/>
     {this.state.shouldRenderSound && <Sound
-          url={sadTrombone}
+          url={this.state.currentSong}
           playStatus={Sound.status.PLAYING}
           playFromPosition={0 /* in milliseconds */}
           autoLoad={true}
+          onFinishedPlaying={this.handleSongFinishedPlaying}
         />}
     </div>
     );
