@@ -4,7 +4,7 @@ import { Router, browserHistory, Route, Link } from 'react-router';
 import logo from './logo.svg';
 import Sound from 'react-sound';
 import Button from './components/SoundButton';
-import sadTrombone from './assests/sounds/sadTrombone.mp3'
+import sadTrombone from './assets/sounds/sadTrombone.mp3'
 
 import ActivityPage from './pages/ActivityPage';
 import LottieControl from './components/LottieControl';
