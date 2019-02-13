@@ -1,7 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import ProgressBar from '../components/ProgressBar';
-import BlobWorkspace from '../components/BlobWorkspace'
+import BlobWorkspace from '../components/BlobWorkspace';
 
 const ActivityPageWithClasses = ({
   classes,
