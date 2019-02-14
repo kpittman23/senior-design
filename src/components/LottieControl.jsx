@@ -12,16 +12,15 @@ export default class LottieControl extends Component {
       isStopped: false, 
       isPaused: false,
       animationsArray: [lucyIdle, lucyColors, lucyBowSpin],
-      currentAnimation: null,
-      index: 0,
+      animationIndex: 0,
     };
   }
 
   handleNextAnimation = () => {
-    if (this.state.index == this.state.animationsArray.length - 1){
-      this.setState({index: 0});
+    if (this.state.animationIndex === this.state.animationsArray.length - 1){
+      this.setState({animationIndex: 0});
     } else {
-      this.setState({index: this.state.index + 1});
+      this.setState({animationIndex: this.state.animationIndex + 1});
     }
   }
 
@@ -34,7 +33,7 @@ export default class LottieControl extends Component {
     const defaultOptions = {
       loop: true,
       autoplay: true, 
-      animationData: this.state.animationsArray[this.state.index],
+      animationData: this.state.animationsArray[this.state.animationIndex],
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice'
       }
