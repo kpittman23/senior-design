@@ -2,12 +2,13 @@ import React from 'react';
 import injectSheet from 'react-jss';
 import classnames from 'classnames';
 import {colors} from '../constants';
+import LottieControl from './LottieControl';
 
 const BlobWorkspace = ({
   classes,
 }) => (
   <div className={classnames(classes.container)}>
-    'txt'
+    <LottieControl />
   </div>
 );
 
