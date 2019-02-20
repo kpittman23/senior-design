@@ -2,23 +2,42 @@
 import React, { Component } from 'react';
 import { Router, browserHistory, Route, Link } from 'react-router';
 import logo from './logo.svg';
-import './App.css';
 import Sound from 'react-sound';
-import Button from './SoundButton';
-import sadTrombone from './sadTrombone.mp3'
+import Button from './components/SoundButton';
+import sadTrombone from './assets/sounds/sadTrombone.mp3'
+import fart from './assets/sounds/fart.mp3'
+
+import ActivityPage from './pages/ActivityPage';
+import LottieControl from './components/LottieControl';
 
 class Page extends Component{
   constructor(){
     super();
     this.state = {
       shouldRenderSound : false,
+      songArray: [
+        sadTrombone,
+        fart,
+      ],
+      currentSong: [],
+      index: 0,
     }
   }
 
   playSound = () => {
     this.setState({
       shouldRenderSound: true,
+      currentSong: this.state.songArray[this.state.index],
     })
+  }
+
+  handleSongFinishedPlaying = () => {
+    if (this.state.index < this.state.songArray.length) {
+      this.setState({
+        currentSong: this.state.songArray[this.state.index + 1],
+        index: this.state.index + 1,
+      })
+    }
   }
 
   render(){
@@ -46,35 +65,35 @@ class Page extends Component{
       this.playSound();
     }}/>
     {this.state.shouldRenderSound && <Sound
-          url={sadTrombone}
+          url={this.state.currentSong}
           playStatus={Sound.status.PLAYING}
           playFromPosition={0 /* in milliseconds */}
           autoLoad={true}
+          onFinishedPlaying={this.handleSongFinishedPlaying}
         />}
+    <LottieControl />
     </div>
     );
   }
 }
 
 const Home = (props) => (
-  <Page title="Home"/>
+  <Page title="Home" {...props}/>
 );
 
-const About = (props) => (
-  <Page title="About"/>
-);
+// Leaving this in here so we can remember how to route between multiple pages
 
-const Settings = (props) => (
-  <Page title="Settings"/>
-);
+// const About = (props) => (
+//   <Page title="About"/>
+// );
+
 
 class App extends Component {
   render() {
     return (
       <Router history={browserHistory}>
-        <Route path="/" component={Home}/>
-        <Route path="/about" component={About}/>
-        <Route path="/settings" component={Settings}/>
+        <Route path="/button" component={Home}/>
+        <Route path="/" component={ActivityPage}/>
       </Router>
     );
   }

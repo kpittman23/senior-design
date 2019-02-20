@@ -1,14 +1,14 @@
 # Getting Started
 
-Music Machines is an hour of code activity to teach the computer science concept of for loops.
+Music Machines is an Hour of Code activity to teach the computer science concept of loops through music. There is a progression of 10 levels throughout the activity. Hour of Code activities are designed to be self guided so that students can complete levels at their own pace.
 
 ## Step One:
 
-Visit code.org to access the Music Machines game.
+Visit our website to access the Music Machines game. If our activity gets chosen as an official Hour of Code, it will also be accessible at https://hourofcode.com/us/learn. 
 
 ## Step Two: 
 
-Click the "Play Music" button.
+Press "Start my Hour of Code" and follow the instructions on each level. 
 
 ```
 screenshot here
@@ -16,19 +16,18 @@ screenshot here
 
 ## Step Three: 
 
-Drag and drop the code blocks from the scratch menu to the scratch workplace.
+Drag and drop the code blocks from the toolbox to the workplace.
 
 ```
-can we insert a gif
+insert gif
 
-turns out we can swag
 ```
 
 ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
 ## Step Four: 
 
-Click the "Run" button to start the music machines!
+Click the "Run" button to start the music machines! The play area will be populated with animations that react to the music that you created!
 
 
 ## FAQ
