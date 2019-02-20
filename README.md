@@ -13,18 +13,18 @@ Our project will engage students in computer science through music. It will allo
 * Morgan Best
 * Advisor: Dr. Annexstein
 
-### [Project Description](https://github.com/kpittman23/senior-design/blob/master/Project-Description.md)
+### [Project Description](https://github.com/kpittman23/senior-design/blob/master/Assignments/Fall%202%20Project%20Description.md)
 
-### [User Stories](https://github.com/kpittman23/senior-design/blob/master/Assignment%204/User_Stories.md)
+### [User Stories](https://github.com/kpittman23/senior-design/blob/master/Assignments/Fall%204%20Design%20Diagrams/User_Stories.md)
 
 ### Design Diagrams
-[Design Diagram 0](https://github.com/kpittman23/senior-design/blob/master/Assignment%204/D0.pdf):
+[Design Diagram 0](https://github.com/kpittman23/senior-design/blob/master/Assignments/Fall%204%20Design%20Diagrams/D0.pdf):
 Design Diagram one is our most basic diagram. It shows the relationship between the student, the webapp, and the speakers. The student interacts with the webapp to create their music, and in turn, the webapp will create a sound that will play from the speakers. 
 
-[Design Diagram 1](https://github.com/kpittman23/senior-design/blob/master/Assignment%204/D1.pdf):
+[Design Diagram 1](https://github.com/kpittman23/senior-design/blob/master/Assignments/Fall%204%20Design%20Diagrams/D1.pdf):
 Design diagram 2 is an expansion of design diagram 1. It shows the same interaction between the student, the webapp, and the speaker, but it also adds some interactions between the webapp and third party libraries. The webapp will interact with blockly to build the drag and drop code blocks. It will also interact with react.js as the building blocks for the app. The webapp will also interact with a server, but we have not yet determined what type of server we will use. 
 
-[Design Diagram 2](https://github.com/kpittman23/senior-design/blob/master/Assignment%204/D2.pdf):
+[Design Diagram 2](https://github.com/kpittman23/senior-design/blob/master/Assignments/Fall%204%20Design%20Diagrams/D2.pdf):
 Design diagram 3 is an expansion of design diagram 2. It shows the same interaction between the student, the webapp, and the speaker, as well as the third party libraries we plan to use. Design diagram 3 also shows static content, including the images and sound clips we are going to collect for out webapp. 
 
 ### Project Tasks and Timeline, Effort Matrix
@@ -59,13 +59,13 @@ We did break out the first framework epic into the individual tasks listed below
 
 Our trello boards are private to our team, but I've included the link [here](https://docs.google.com/document/d/1rsQWjBcVgQcL_Pdpi6iWaus7aCcYcQ7YxgF-0GnhhTY/edit) for the team and Dr. Annexstein to view.
 
-### [ABET Concerns Essay](https://github.com/kpittman23/senior-design/blob/master/Assignment7.md)
+### [ABET Concerns Essay](https://github.com/kpittman23/senior-design/blob/master/Assignments/Fall%206%20ABET%20Essay.md)
 
-### [Slideshow](https://docs.google.com/presentation/d/1ikXMVuwyqJG0sGC4A2ev79yo8Xhca5E_AbsJXg3qT_s/edit?usp=sharing)
+### [Slideshow](https://github.com/kpittman23/senior-design/blob/master/Assignments/Spring%203%20Slides)
 
-### [Self-Assessment Essays](https://github.com/kpittman23/senior-design/tree/master/Assignment%203)
+### [Self-Assessment Essays](https://github.com/kpittman23/senior-design/tree/master/Assignments/Fall%203%20Self%20Assessments)
 
-### [Professional Biographies](https://github.com/kpittman23/senior-design/blob/master/Biographies.md)
+### [Professional Biographies](https://github.com/kpittman23/senior-design/blob/master/Assignments/Fall%201%20Biographies.md)
 
 ### Budget & Expenses to Date
 None
