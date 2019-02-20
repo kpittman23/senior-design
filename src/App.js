@@ -19,7 +19,7 @@ class Page extends Component{
         sadTrombone,
         fart,
       ],
-      currentSong: [],
+      currentSong: null,
       index: 0,
     }
   }
