@@ -1,8 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import ProgressBar from '../components/ProgressBar';
-import { Button } from 'grommet';
-import { Box } from 'grommet';
+import { Button, Box, Paragraph } from 'grommet';
 import LottieControl from '../components/LottieControl';
 
 const ActivityPageWithClasses = ({
@@ -12,8 +11,11 @@ const ActivityPageWithClasses = ({
 }) => (
     <div className={classes.page}>
       <ProgressBar currentSelectedStepNumber={currentLevel} numSteps={numLevels} />
+      <Box className={classes.instructions} border={{ color: 'none', size: 'small' }} round='small'>
+        <Paragraph size='medium' textAlign='center'>This is where the instructions will go. Hello! :^)</Paragraph>
+      </Box>
       <div className={classes.flexCenter}>
-        <Box className={classes.box} border={{ color: 'brand', size: 'small' }} round='xsmall'>
+        <Box className={classes.workspace} border={{ color: 'grey', size: 'small' }} round='xsmall'>
           <LottieControl />
         </Box>
         <Button className={classes.button} label='Run' primary='true' />
@@ -30,13 +32,23 @@ const styles = {
     boxSizing: 'border-box',
     '& > *': {
       boxSizing: 'border-box'
-    }
+    },
+    // backgroundColor: '#D8D8D8',
   },
-  box: {
-    width: 500,
+  workspace: {
+    width: 600,
     height: 500,
     margin: 5,
+    marginTop: 10,
     padding: 1,
+    backgroundColor: 'white',
+  },
+  instructions: {
+    width: '50%',
+    height: 80,
+    margin: 5,
+    padding: 1,
+    backgroundColor: '#88E7E0',
   },
   button: {
     margin: 5,
