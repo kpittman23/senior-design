@@ -1,7 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import ProgressBar from '../components/ProgressBar';
-import { Button, Box, Paragraph } from 'grommet';
+import { Button, Box, Text } from 'grommet';
 import LottieControl from '../components/LottieControl';
 
 const ActivityPageWithClasses = ({
@@ -12,17 +12,19 @@ const ActivityPageWithClasses = ({
     <div className={classes.page}>
       <ProgressBar currentSelectedStepNumber={currentLevel} numSteps={numLevels} />
       <Box className={classes.instructions} border={{ color: 'none', size: 'small' }} round='small'>
-        <Paragraph size='medium' textAlign='center'>This is where the instructions will go. Hello! :^)</Paragraph>
+        <Text size='small' textAlign='center'>{instructions}</Text>
       </Box>
       <div className={classes.flexCenter}>
         <Box className={classes.workspace} border={{ color: 'grey', size: 'small' }} round='xsmall'>
           <LottieControl />
         </Box>
         <Button className={classes.button} label='Run' primary='true' />
-        <Button className={classes.button} label='Hint' />
+        <Button className={classes.button} label='Hint'/>
       </div>
     </div>
   );
+
+const instructions = 'Can you make Lucy play music? What do you think will happen?'
 
 const styles = {
   page: {
@@ -33,7 +35,6 @@ const styles = {
     '& > *': {
       boxSizing: 'border-box'
     },
-    // backgroundColor: '#D8D8D8',
   },
   workspace: {
     width: 600,
@@ -45,10 +46,11 @@ const styles = {
   },
   instructions: {
     width: '50%',
-    height: 80,
-    margin: 5,
-    padding: 1,
+    height: 60,
+    marginTop: 10,
+    padding: 10,
     backgroundColor: '#88E7E0',
+    fontFamily: 'Arvo',
   },
   button: {
     margin: 5,
