@@ -9,7 +9,7 @@ export default class LottieControl extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isStopped: false, 
+      isStopped: false,
       isPaused: false,
       animationsArray: [lucyIdle, lucyColors, lucyBowSpin],
       animationIndex: 0,
@@ -17,23 +17,28 @@ export default class LottieControl extends Component {
   }
 
   handleNextAnimation = () => {
-    if (this.state.animationIndex === this.state.animationsArray.length - 1){
-      this.setState({animationIndex: 0});
+    if (this.state.animationIndex === this.state.animationsArray.length - 1) {
+      this.setState({ animationIndex: 0 });
     } else {
-      this.setState({animationIndex: this.state.animationIndex + 1});
+      this.setState({ animationIndex: this.state.animationIndex + 1 });
     }
   }
 
   render() {
-    const buttonStyle = {
-      display: 'block',
-      margin: '10px auto'
-    };
 
     const defaultOptions = {
       loop: true,
-      autoplay: true, 
+      autoplay: true,
       animationData: this.state.animationsArray[this.state.animationIndex],
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+      }
+    };
+
+    const defaultOptions2 = {
+      loop: true,
+      autoplay: true,
+      animationData: this.state.animationsArray[1],
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice'
       }
@@ -41,14 +46,10 @@ export default class LottieControl extends Component {
 
     return <div>
       <Lottie options={defaultOptions}
-              height={800}
-              width={800}
-              isStopped={this.state.isStopped}
-              isPaused={this.state.isPaused}/>
-      <button style={buttonStyle} onClick={() => this.setState({isStopped: true})}>stop</button>
-      <button style={buttonStyle} onClick={() => this.setState({isStopped: false})}>play</button>
-      <button style={buttonStyle} onClick={() => this.setState({isPaused: !this.state.isPaused})}>pause</button>
-      <button style={buttonStyle} onClick={() => this.handleNextAnimation()}>next animation</button>
+        height={500}
+        width={500}
+        isStopped={this.state.isStopped}
+        isPaused={this.state.isPaused} />
     </div>
   }
 }
