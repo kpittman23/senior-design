@@ -3,8 +3,6 @@ import injectSheet from 'react-jss';
 import React, { Component } from 'react';
 import Modal from 'react-modal';
 
-
-
 class HintModal extends Component {
     constructor() {
         super();
@@ -63,16 +61,18 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'white',
+        borderRadius: '5px',
         borderStyle: 'solid',
         borderColor: 'grey',
         borderWidth: 2,
+        outline: 'none !important',
     },
     button: { 
         margin: 5,
         marginTop: 10,
     },
     hint: {
-        fontFamily: 'Arvo',
+        fontFamily: 'Roboto',
     },
 }
 
