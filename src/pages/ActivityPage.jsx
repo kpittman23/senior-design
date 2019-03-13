@@ -3,6 +3,7 @@ import injectSheet from 'react-jss';
 import ProgressBar from '../components/ProgressBar';
 import { Button, Box, Text } from 'grommet';
 import LottieControl from '../components/LottieControl';
+import HintModal from '../components/HintModal'
 
 const ActivityPageWithClasses = ({
   classes,
@@ -19,7 +20,7 @@ const ActivityPageWithClasses = ({
           <LottieControl />
         </Box>
         <Button className={classes.button} label='Run' primary='true' />
-        <Button className={classes.button} label='Hint'/>
+        <HintModal />
       </div>
     </div>
   );
