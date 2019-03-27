@@ -5,7 +5,7 @@ import { Button, Box, Text } from 'grommet';
 import LucyComponent from '../components/LucyComponent';
 import GeoffComponent from '../components/GeoffComponent';
 import HintModal from '../components/HintModal';
-import SoundComponent from '../components/RenderSoundComponent';
+import ConclusionModal from '../components/ConclusionModal';
 
 const ActivityPageWithClasses = ({
   classes,
