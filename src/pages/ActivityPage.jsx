@@ -2,8 +2,9 @@ import React from 'react';
 import injectSheet from 'react-jss';
 import ProgressBar from '../components/ProgressBar';
 import { Button, Box, Text } from 'grommet';
-import LottieControl from '../components/LottieControl';
-import HintModal from '../components/HintModal'
+import LucyComponent from '../components/LucyComponent';
+import GeoffComponent from '../components/GeoffComponent';
+import HintModal from '../components/HintModal';
 
 const ActivityPageWithClasses = ({
   classes,
@@ -17,7 +18,13 @@ const ActivityPageWithClasses = ({
       </Box>
       <div className={classes.flexCenter}>
         <Box className={classes.workspace} border={{ color: 'grey', size: 'small' }} round='xsmall'>
-          <LottieControl />
+          <div>
+            <GeoffComponent />
+          </div>
+          <div className={classes.gridDisplay}>
+            <LucyComponent />
+            <LucyComponent style='float: right' />
+          </div>
         </Box>
         <Button className={classes.button} label='Run' primary='true' />
         <HintModal />
@@ -42,7 +49,6 @@ const styles = {
     height: 500,
     margin: 5,
     marginTop: 10,
-    padding: 1,
     backgroundColor: 'white',
   },
   instructions: {
@@ -51,7 +57,7 @@ const styles = {
     marginTop: 10,
     padding: 10,
     backgroundColor: '#88E7E0',
-    fontFamily: 'Arvo',
+    fontFamily: 'Roboto',
   },
   button: {
     margin: 5,
@@ -65,6 +71,10 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
   },
+  gridDisplay: {
+    display: 'grid',
+    gridTemplateColumns: 'auto auto',
+  }
 }
 
 export default injectSheet(styles)(ActivityPageWithClasses);
