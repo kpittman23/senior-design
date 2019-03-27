@@ -8,6 +8,10 @@ import sadTrombone from './assets/sounds/sadTrombone.mp3'
 import fart from './assets/sounds/fart.mp3'
 
 import ActivityPage from './pages/ActivityPage';
+import TitlePage from './pages/TitlePage';
+
+
+
 import LottieControl from './components/LottieControl';
 
 class Page extends Component{
@@ -94,6 +98,7 @@ class App extends Component {
       <Router history={browserHistory}>
         <Route path="/button" component={Home}/>
         <Route path="/" component={ActivityPage}/>
+        <Route path="/Title" component={TitlePage}/>
       </Router>
     );
   }
