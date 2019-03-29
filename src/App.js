@@ -10,8 +10,6 @@ import fart from './assets/sounds/fart.mp3'
 import ActivityPage from './pages/ActivityPage';
 import TitlePage from './pages/TitlePage';
 
-
-
 import LottieControl from './components/LottieControl';
 
 class Page extends Component{
