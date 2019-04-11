@@ -18,6 +18,10 @@ class ProgressBarWithClasses extends Component {
     })
   }
 
+  navigatePage = (stepNumber) => {
+
+  }
+
   render(){
     const {
       classes,

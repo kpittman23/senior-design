@@ -5,6 +5,7 @@ import { Button, Box, Text } from 'grommet';
 import LucyComponent from '../components/LucyComponent';
 import GeoffComponent from '../components/GeoffComponent';
 import HintModal from '../components/HintModal';
+import ConclusionModal from '../components/ConclusionModal';
 
 const ActivityPageWithClasses = ({
   classes,
@@ -26,8 +27,11 @@ const ActivityPageWithClasses = ({
             <LucyComponent style='float: right' />
           </div>
         </Box>
-        <Button className={classes.button} label='Run' primary='true' />
+        <Button className={classes.button} label='Run' primary='true' onClick={() => {
+          this.handleSound();
+        }} />
         <HintModal />
+        <ConclusionModal />
       </div>
     </div>
   );

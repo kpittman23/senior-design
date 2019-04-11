@@ -4,11 +4,10 @@ import { Router, browserHistory, Route, Link } from 'react-router';
 import logo from './logo.svg';
 import Sound from 'react-sound';
 import Button from './components/SoundButton';
-import sadTrombone from './assets/sounds/sadTrombone.mp3'
-import fart from './assets/sounds/fart.mp3'
 
 import ActivityPage from './pages/ActivityPage';
 import TitlePage from './pages/TitlePage';
+import ConclusionPage from './pages/ConclusionPage';
 
 import LottieControl from './components/LottieControl';
 
@@ -16,29 +15,6 @@ class Page extends Component{
   constructor(){
     super();
     this.state = {
-      shouldRenderSound : false,
-      songArray: [
-        sadTrombone,
-        fart,
-      ],
-      currentSong: null,
-      index: 0,
-    }
-  }
-
-  playSound = () => {
-    this.setState({
-      shouldRenderSound: true,
-      currentSong: this.state.songArray[this.state.index],
-    })
-  }
-
-  handleSongFinishedPlaying = () => {
-    if (this.state.index < this.state.songArray.length) {
-      this.setState({
-        currentSong: this.state.songArray[this.state.index + 1],
-        index: this.state.index + 1,
-      })
     }
   }
 
@@ -62,18 +38,6 @@ class Page extends Component{
     <p>
       <Link to="/settings">Settings</Link>
     </p>
-    <Button text={"Play Sound"} onClick={() => {
-      console.log('hello');
-      this.playSound();
-    }}/>
-    {this.state.shouldRenderSound && <Sound
-          url={this.state.currentSong}
-          playStatus={Sound.status.PLAYING}
-          playFromPosition={0 /* in milliseconds */}
-          autoLoad={true}
-          onFinishedPlaying={this.handleSongFinishedPlaying}
-        />}
-    <LottieControl />
     </div>
     );
   }
@@ -97,6 +61,7 @@ class App extends Component {
         <Route path="/button" component={Home}/>
         <Route path="/" component={ActivityPage}/>
         <Route path="/Title" component={TitlePage}/>
+        <Route path="/Test" component={ConclusionPage}/>
       </Router>
     );
   }
