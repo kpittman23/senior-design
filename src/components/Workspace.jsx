@@ -32,6 +32,7 @@ class Workspace extends Component {
             index: 0,
             isStopped: false,
             isPaused: false,
+            animationsArray: null,
             currentAnimation: geoffGlasses,
         };
     }
@@ -45,11 +46,20 @@ class Workspace extends Component {
         let animations = Util.createAnimationsArray(this.state.songArray);
 
         this.setState({
-            animationsArray: newState,
+            animationsArray: animations,
             shouldRenderSound: true,
             currentSong: this.state.songArray[this.state.index],
             index: this.state.index + 1,
-        })
+        }, () => {
+            console.log(this.state)
+        });
+
+        // this.setState({
+        //     animationsArray: animations,
+        //     shouldRenderSound: true,
+        //     currentSong: this.state.songArray[this.state.index],
+        //     index: this.state.index + 1,
+        // })
     }
 
     handleSongFinishedPlaying = () => {
