@@ -2,9 +2,12 @@ import React, { Component } from 'react'
 import injectSheet from 'react-jss';
 import Lottie from 'react-lottie';
 import * as lucyIdle from '../assets/animations/lucyIdle.json';
-import * as lucyColors from '../assets/animations/lucyColors.json';
+import * as lucyBows from '../assets/animations/lucyBows.json';
 import * as lucyBowSpin from '../assets/animations/lucyBowSpin.json';
+import * as lucyColors from '../assets/animations/lucyColors.json';
+import * as lucyEyes from '../assets/animations/lucyEyes.json';
 import * as lucyJump from '../assets/animations/lucyJump.json';
+import * as lucySmall from '../assets/animations/lucySmall.json';
 
 class LucyComponent extends Component {
 
@@ -13,7 +16,7 @@ class LucyComponent extends Component {
     this.state = {
       isStopped: false,
       isPaused: false,
-      animationsArray: [lucyIdle, lucyColors, lucyBowSpin, lucyJump],
+      animationsArray: [lucyIdle, lucyBows, lucyBowSpin, lucyColors, lucyEyes, lucyJump, lucySmall],
       animationIndex: 0,
     };
   }
