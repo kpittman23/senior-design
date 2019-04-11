@@ -2,21 +2,21 @@ import React, { Component } from 'react'
 import injectSheet from 'react-jss';
 import Lottie from 'react-lottie';
 
-import * as geoffIdle from '../assets/animations/geoffIdle.json';
-import * as geoffBig from '../assets/animations/geoffBig.json';
-import * as geoffCrown from '../assets/animations/geoffCrown.json';
-import * as geoffGlasses from '../assets/animations/geoffGlasses.json';
-import * as geoffJump from '../assets/animations/geoffJump.json';
-import * as geoffSpin from '../assets/animations/geoffSpin.json';
+import * as freddieIdle from '../assets/animations/freddieIdle.json';
+import * as freddieDrip from '../assets/animations/freddieDrip.json';
+import * as freddieEyes from '../assets/animations/freddieEyes.json';
+import * as freddieSmall from '../assets/animations/freddieSmall.json';
+import * as freddieSpin from '../assets/animations/freddieSpin.json';
+import * as freddieThumbs from '../assets/animations/freddieThumbs.json';
 
-class GeoffComponent extends Component {
+class FreddieComponent extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
       isStopped: false,
       isPaused: false,
-      animationsArray: [geoffIdle, geoffBig, geoffCrown, geoffGlasses, geoffJump, geoffSpin],
+      animationsArray: [freddieIdle, freddieDrip, freddieEyes, freddieSmall, freddieSpin, freddieThumbs],
       animationIndex: 2,
     };
 
@@ -46,7 +46,7 @@ class GeoffComponent extends Component {
 
     return <div>
       <div>
-        <Lottie className={classes.geoff} options={defaultOptions}
+        <Lottie className={classes.freddie} options={defaultOptions}
           height={200}
           width={200}
           isStopped={this.state.isStopped}
@@ -57,10 +57,10 @@ class GeoffComponent extends Component {
 }
 
 const styles = {
-  geoff: {
+  freddie: {
     float: 'right',
   },
 };
 
 
-export default injectSheet(styles)(GeoffComponent);
+export default injectSheet(styles)(FreddieComponent);
