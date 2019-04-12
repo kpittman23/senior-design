@@ -19,7 +19,6 @@ class GeoffComponent extends Component {
       animationsArray: [geoffIdle, geoffBig, geoffCrown, geoffGlasses, geoffJump, geoffSpin],
       animationIndex: 2,
     };
-
   }
 
   handleNextAnimation = () => {

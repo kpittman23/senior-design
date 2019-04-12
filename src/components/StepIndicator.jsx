@@ -2,6 +2,7 @@ import React from 'react';
 import injectSheet from 'react-jss';
 import classnames from 'classnames';
 import {colors} from '../constants';
+import { Link } from 'react-router';
 
 const StepIndicatorWithClasses = ({
   classes,
@@ -10,7 +11,7 @@ const StepIndicatorWithClasses = ({
   onClick,
 }) => (
   <div className={classnames(classes.container, {[classes.isSelected]: isSelected})} onClick={onClick}>
-    {stepNumber}
+    <Link to={"/" + stepNumber}>{stepNumber}</Link>
   </div>
 );
 
