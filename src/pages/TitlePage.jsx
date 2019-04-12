@@ -24,8 +24,6 @@ class TitlePageWithClasses extends React.Component {
         if (this.state.redirect) {
             console.log(this.props)
             this.props.route.history.push('/1');
-            //return <Redirect to='/1' />
-            //return <Link to='/1' > Link </Link>
         }
     }
 
