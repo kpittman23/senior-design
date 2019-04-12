@@ -1,3 +1,24 @@
+/* animationsList: [
+    lucyBows,
+    lucyBowSpin,
+    lucyEyes,
+    lucyJump,
+    lucySmall,
+    lucyIdle,
+    geoffGlasses,
+    geoffJump,
+    geoffSpin,
+    geoffBig,
+    geoffCrown,
+    geoffIdle,
+    freddieDrip,
+    freddieEyes,
+    freddieSmall,
+    freddieSpin,
+    freddieThumbs,
+    freddieIdle,
+] */
+
 export default class Util {
     static createAnimationsArray(soundArray) {
         let animationsArray = [];
@@ -11,66 +32,66 @@ export default class Util {
                 let sound = soundName[soundName.length - 1];
                 switch (sound) {
                     case 'A':
-                        animationsArray.push('lucyJump');
+                        animationsArray.push(0);
                         break;
                     case 'B':
-                        animationsArray.push('lucySpin');
+                        animationsArray.push(1);
                         break;
                     case 'C':
-                        animationsArray.push('lucyColors');
+                        animationsArray.push(2);
                         break;
                     case 'D':
-                        animationsArray.push('lucyJump');
+                        animationsArray.push(3);
                         break;
                     case 'E':
-                        animationsArray.push('lucySpin');
+                        animationsArray.push(4);
                         break;
                     default:
-                        animationsArray.push('lucyIdle');
+                        animationsArray.push(5);
                         break;
                 }
             } else if (soundName[0] === 'g') {
                 let sound = soundName[soundName.length - 1];
                 switch (sound) {
                     case 'A':
-                        animationsArray.push('geoffJump');
+                        animationsArray.push(6);
                         break;
                     case 'B':
-                        animationsArray.push('geoffGlasses');
+                        animationsArray.push(7);
                         break;
                     case 'C':
-                        animationsArray.push('geoffJump');
+                        animationsArray.push(8);
                         break;
                     case 'D':
-                        animationsArray.push('geoffGlasses');
+                        animationsArray.push(9);
                         break;
                     case 'E':
-                        animationsArray.push('geoffJump');
+                        animationsArray.push(10);
                         break;
                     default:
-                        animationsArray.push('geoffGlasses');
+                        animationsArray.push(11);
                         break;
                 }
             } else if (soundName[0] === 'f') {
                 let sound = soundName[soundName.length - 1];
                 switch (sound) {
                     case 'A':
-                        animationsArray.push('lucyJump');
+                        animationsArray.push(12);
                         break;
                     case 'B':
-                        animationsArray.push('lucySpin');
+                        animationsArray.push(13);
                         break;
                     case 'C':
-                        animationsArray.push('lucyColors');
+                        animationsArray.push(14);
                         break;
                     case 'D':
-                        animationsArray.push('lucyJump');
+                        animationsArray.push(15);
                         break;
                     case 'E':
-                        animationsArray.push('lucySpin');
+                        animationsArray.push(16);
                         break;
                     default:
-                        animationsArray.push('lucyIdle');
+                        animationsArray.push(17);
                         break;
                 }
             }
