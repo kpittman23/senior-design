@@ -26,6 +26,7 @@ const styles = {
     fontWeight: 'bold',
     cursor: 'pointer',
     textDecoration: 'none',
+    margin: 30,
   },
   isSelected: {
     width: 35,

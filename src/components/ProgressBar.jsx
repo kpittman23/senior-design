@@ -59,8 +59,10 @@ const styles = {
     alignItems: 'center',
     '& > * + *': {
       marginLeft: 20,
-    }
-  }
+    },
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
 }
 
 ProgressBarWithClasses.defaultProps = {

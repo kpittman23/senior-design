@@ -1,9 +1,9 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import ProgressBar from '../components/ProgressBar';
-import { Box, Text } from 'grommet';
-import Workspace from '../components/Workspace'
-import ConclusionModal from '../components/ConclusionModal';
+import { Button, Box, Text } from 'grommet';
+import HintModal from '../components/HintModal';
+import Workspace from '../components/Workspace';
 
 const ActivityPageWithClasses = ({
   classes,
@@ -17,12 +17,11 @@ const ActivityPageWithClasses = ({
       </Box>
       <div className={classes.flexCenter}>
         <Workspace />
-        <ConclusionModal />
       </div>
     </div>
   );
 
-const instructions = 'Use what you\'ve learned and create your own song!';
+const instructions = 'Can you make Lucy play some music? What do you think will happen?';
 
 const styles = {
   page: {
