@@ -20,7 +20,6 @@ class GeoffComponent extends Component {
       animationIndex: 2,
       currentAnimation: this.props.currentAnimation,
     };
-
   }
 
   handleNextAnimation = () => {
