@@ -1,10 +1,8 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import ProgressBar from '../components/ProgressBar';
-import { Button, Box, Text } from 'grommet';
-import LucyComponent from '../components/LucyComponent';
-import GeoffComponent from '../components/GeoffComponent';
-import HintModal from '../components/HintModal';
+import { Box, Text } from 'grommet';
+import Workspace from '../components/Workspace'
 import ConclusionModal from '../components/ConclusionModal';
 
 const ActivityPageWithClasses = ({
@@ -18,25 +16,13 @@ const ActivityPageWithClasses = ({
         <Text size='small' textAlign='center'>{instructions}</Text>
       </Box>
       <div className={classes.flexCenter}>
-        <Box className={classes.workspace} border={{ color: 'grey', size: 'small' }} round='xsmall'>
-          <div>
-            <GeoffComponent />
-          </div>
-          <div className={classes.gridDisplay}>
-            <LucyComponent />
-            <LucyComponent style='float: right' />
-          </div>
-        </Box>
-        <Button className={classes.button} label='Run' primary='true' onClick={() => {
-          this.handleSound();
-        }} />
-        <HintModal />
+        <Workspace />
         <ConclusionModal />
       </div>
     </div>
   );
 
-const instructions = 'Can you make Lucy play music? What do you think will happen?'
+const instructions = 'Use what you\'ve learned and create your own song!';
 
 const styles = {
   page: {

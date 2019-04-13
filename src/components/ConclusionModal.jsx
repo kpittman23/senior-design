@@ -29,7 +29,7 @@ class ConclustionModal extends Component {
         } = this.props;
         return (
             <div>
-                <Button className={classes.button} label='Conclusion' onClick={this.handleOpenModal}></Button>
+                {/* <Button className={classes.button} label='Conclusion' onClick={this.handleOpenModal}></Button> */}
                 <div className={classes.flexCenter}>
                     <Modal className={classes.modal}
                         isOpen={this.state.showModal}

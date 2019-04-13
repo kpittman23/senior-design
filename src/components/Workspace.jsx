@@ -59,6 +59,11 @@ class Workspace extends Component {
                 freddieA,
                 geoffB,
                 lucyC,
+                freddieD,
+                lucyE,
+                geoffD,
+                geoffC,
+                lucyA,
                 freddieB,
             ],
             currentSong: null,
@@ -96,6 +101,7 @@ class Workspace extends Component {
         let animations = Util.createAnimationsArray(this.state.songArray);
         this.setState({
             animationsArray: animations,
+            index: 0,
         }, () => {
             this.handlePlaySound();
         });
@@ -116,6 +122,16 @@ class Workspace extends Component {
             this.setState({
                 currentSong: this.state.songArray[this.state.index],
                 index: this.state.index + 1,
+                currentLucyAnimation: lucyIdle,
+                currentGeoffAnimation: geoffIdle,
+                currentFreddieAnimation: freddieIdle,
+            })
+        } else {
+            this.setState({
+                currentSong: null,
+                currentLucyAnimation: lucyIdle,
+                currentGeoffAnimation: geoffIdle,
+                currentFreddieAnimation: freddieIdle,
             })
         }
     }
@@ -126,7 +142,7 @@ class Workspace extends Component {
                 this.setState({
                     currentLucyAnimation: this.state.animationsList[this.state.animationsArray[this.state.index - 1]],
                 })
-            } else if (this.state.animationsArray[this.state.index - 1] > 5 && this.state.animationsArray[this.state.index - 1] <  12) {
+            } else if (this.state.animationsArray[this.state.index - 1] > 5 && this.state.animationsArray[this.state.index - 1] < 12) {
                 this.setState({
                     currentGeoffAnimation: this.state.animationsList[this.state.animationsArray[this.state.index - 1]],
                 })
