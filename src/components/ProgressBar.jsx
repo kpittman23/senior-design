@@ -30,7 +30,6 @@ class ProgressBarWithClasses extends Component {
     } = this.props;
     
     return (
-    
       <div className={classnames(classes.progressBar, className)}>
         {[...Array(numSteps).keys()].map((val, arrayIndex) => {
           const stepNumber = arrayIndex + 1;
