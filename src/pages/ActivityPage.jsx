@@ -2,14 +2,14 @@ import React from 'react';
 import injectSheet from 'react-jss';
 import ProgressBar from '../components/ProgressBar';
 import { Button, Box, Text } from 'grommet';
-import LucyComponent from '../components/LucyComponent';
-import GeoffComponent from '../components/GeoffComponent';
 import HintModal from '../components/HintModal';
+import Workspace from '../components/Workspace';
 
 const ActivityPageWithClasses = ({
   classes,
   currentLevel,
   numLevels = 10,
+  instructions,
 }) => (
     <div className={classes.page}>
       <ProgressBar currentSelectedStepNumber={currentLevel} numSteps={numLevels} />
@@ -17,22 +17,10 @@ const ActivityPageWithClasses = ({
         <Text size='small' textAlign='center'>{instructions}</Text>
       </Box>
       <div className={classes.flexCenter}>
-        <Box className={classes.workspace} border={{ color: 'grey', size: 'small' }} round='xsmall'>
-          <div>
-            <GeoffComponent />
-          </div>
-          <div className={classes.gridDisplay}>
-            <LucyComponent />
-            <LucyComponent style='float: right' />
-          </div>
-        </Box>
-        <Button className={classes.button} label='Run' primary='true' />
-        <HintModal />
+        <Workspace />
       </div>
     </div>
   );
-
-const instructions = 'Can you make Lucy play music? What do you think will happen?'
 
 const styles = {
   page: {

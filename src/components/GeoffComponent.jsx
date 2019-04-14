@@ -18,6 +18,7 @@ class GeoffComponent extends Component {
       isPaused: false,
       animationsArray: [geoffIdle, geoffBig, geoffCrown, geoffGlasses, geoffJump, geoffSpin],
       animationIndex: 2,
+      currentAnimation: this.props.currentAnimation,
     };
   }
 

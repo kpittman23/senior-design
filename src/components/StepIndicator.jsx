@@ -10,7 +10,7 @@ const StepIndicatorWithClasses = ({
   stepNumber,
   onClick,
 }) => (
-  <Link to={"/" + stepNumber} className={classnames(classes.container, {[classes.isSelected]: isSelected})}>{stepNumber}</Link>
+  <Link to={"/" + stepNumber} className={classnames(classes.container, {[classes.isSelected]: isSelected})} onClick = {onClick}>{stepNumber}</Link>
 );
 
 const styles = {
@@ -26,6 +26,7 @@ const styles = {
     fontWeight: 'bold',
     cursor: 'pointer',
     textDecoration: 'none',
+    margin: 30,
   },
   isSelected: {
     width: 35,

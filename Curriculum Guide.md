@@ -1,3 +1,5 @@
+	## Curriculum Guide
+	
 	1. Can you make blob 1 play some music? What do you think will happen?
 		a. All blob play blocks but they have to use at least one blob 1 block to move on. Repeat block in there just for fun
 	2. All the blobs want to play music! Can you make all 3 play music?
