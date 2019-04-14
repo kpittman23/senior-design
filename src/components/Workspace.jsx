@@ -45,9 +45,6 @@ import * as lucyIdle from '../assets/animations/lucyIdle.json';
 import * as lucyJump from '../assets/animations/lucyJump.json';
 import * as lucySmall from '../assets/animations/lucySmall.json';
 
-
-
-
 import Util from '../assets/util';
 
 class Workspace extends Component {
@@ -207,10 +204,6 @@ class Workspace extends Component {
                                 isStopped={this.state.isStopped}
                                 isPaused={this.state.isPaused} />
                         </div>
-                        {/* <div className={classes.gridDisplay}>
-                        <LucyComponent />
-                        <LucyComponent style='float: right' />
-                    </div> */}
                     </Box>
                 </div>
                 <Button className={classes.button} label='Run' primary='true' onClick={() => {
