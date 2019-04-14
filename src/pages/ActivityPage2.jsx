@@ -9,7 +9,6 @@ const ActivityPageWithClasses = ({
   classes,
   currentLevel,
   numLevels = 10,
-  instructions,
 }) => (
     <div className={classes.page}>
       <ProgressBar currentSelectedStepNumber={currentLevel} numSteps={numLevels} />
@@ -21,6 +20,8 @@ const ActivityPageWithClasses = ({
       </div>
     </div>
   );
+
+const instructions = 'The entire Blob Band wants to play music! Can you make all 3 blobs play music?';
 
 const styles = {
   page: {

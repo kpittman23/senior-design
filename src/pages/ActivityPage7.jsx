@@ -9,7 +9,6 @@ const ActivityPageWithClasses = ({
   classes,
   currentLevel,
   numLevels = 10,
-  instructions,
 }) => (
     <div className={classes.page}>
       <ProgressBar currentSelectedStepNumber={currentLevel} numSteps={numLevels} />
@@ -21,6 +20,8 @@ const ActivityPageWithClasses = ({
       </div>
     </div>
   );
+
+const instructions = 'What\'s this new block? Can you make Lucy play note D and note E at the same time?';
 
 const styles = {
   page: {

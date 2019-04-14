@@ -4,13 +4,10 @@ import { Router, browserHistory, Route, Link } from 'react-router';
 import logo from './logo.svg';
 import Sound from 'react-sound';
 import Button from './components/SoundButton';
-import sadTrombone from './assets/sounds/sadTrombone.mp3'
-import fart from './assets/sounds/fart.mp3'
+import { instructions } from './assets/textOptions';
 
 import ActivityPage from './pages/ActivityPage';
 import TitlePage from './pages/TitlePage';
-
-
 
 import LottieControl from './components/LottieControl';
 
@@ -18,29 +15,6 @@ class Page extends Component{
   constructor(){
     super();
     this.state = {
-      shouldRenderSound : false,
-      songArray: [
-        sadTrombone,
-        fart,
-      ],
-      currentSong: null,
-      index: 0,
-    }
-  }
-
-  playSound = () => {
-    this.setState({
-      shouldRenderSound: true,
-      currentSong: this.state.songArray[this.state.index],
-    })
-  }
-
-  handleSongFinishedPlaying = () => {
-    if (this.state.index < this.state.songArray.length) {
-      this.setState({
-        currentSong: this.state.songArray[this.state.index + 1],
-        index: this.state.index + 1,
-      })
     }
   }
 
@@ -64,18 +38,6 @@ class Page extends Component{
     <p>
       <Link to="/settings">Settings</Link>
     </p>
-    <Button text={"Play Sound"} onClick={() => {
-      console.log('hello');
-      this.playSound();
-    }}/>
-    {this.state.shouldRenderSound && <Sound
-          url={this.state.currentSong}
-          playStatus={Sound.status.PLAYING}
-          playFromPosition={0 /* in milliseconds */}
-          autoLoad={true}
-          onFinishedPlaying={this.handleSongFinishedPlaying}
-        />}
-    <LottieControl />
     </div>
     );
   }
@@ -96,9 +58,17 @@ class App extends Component {
   render() {
     return (
       <Router history={browserHistory}>
-        <Route path="/button" component={Home}/>
-        <Route path="/" component={ActivityPage}/>
-        <Route path="/Title" component={TitlePage}/>
+        <Route path="/1" render={() => <ActivityPage instructions={instructions[0]} />}/>
+        <Route path="/2" render={(props) => <ActivityPage {...props} instructions={instructions[1]} />}/>
+        <Route path="/3" render={(props) => <ActivityPage {...props} instructions={instructions[2]} />}/>
+        <Route path="/4" render={(props) => <ActivityPage {...props} instructions={instructions[3]} />}/>
+        <Route path="/5" render={(props) => <ActivityPage {...props} instructions={instructions[4]} />}/>
+        <Route path="/6" render={(props) => <ActivityPage {...props} instructions={instructions[5]} />}/>
+        <Route path="/7" render={(props) => <ActivityPage {...props} instructions={instructions[6]} />}/>
+        <Route path="/8" render={(props) => <ActivityPage {...props} instructions={instructions[7]} />}/>
+        <Route path="/9" render={(props) => <ActivityPage {...props} instructions={instructions[8]} />}/>
+        <Route path="/10" render={(props) => <ActivityPage {...props} instructions={instructions[9]} />}/>
+        <Route path="/" component={TitlePage} history={browserHistory}/>
       </Router>
     );
   }

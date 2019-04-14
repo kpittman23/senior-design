@@ -9,7 +9,6 @@ const ActivityPageWithClasses = ({
   classes,
   currentLevel,
   numLevels = 10,
-  instructions,
 }) => (
     <div className={classes.page}>
       <ProgressBar currentSelectedStepNumber={currentLevel} numSteps={numLevels} />
@@ -21,6 +20,8 @@ const ActivityPageWithClasses = ({
       </div>
     </div>
   );
+
+const instructions = 'Do you see a pattern? Can you play the same thing using only 4 blocks?';
 
 const styles = {
   page: {

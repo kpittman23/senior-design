@@ -26,7 +26,6 @@ class ProgressBarWithClasses extends Component {
     } = this.props;
     
     return (
-    
       <div className={classnames(classes.progressBar, className)}>
         {[...Array(numSteps).keys()].map((val, arrayIndex) => {
           const stepNumber = arrayIndex + 1;
@@ -55,8 +54,10 @@ const styles = {
     alignItems: 'center',
     '& > * + *': {
       marginLeft: 20,
-    }
-  }
+    },
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
 }
 
 ProgressBarWithClasses.defaultProps = {
